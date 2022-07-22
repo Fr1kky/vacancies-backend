@@ -4,13 +4,13 @@ from flask import Flask, jsonify, request
 app = Flask(__name__)
 
 
-@app.route('/v1/get_rate', methods=['GET'])
+@app.route('/get_rate', methods=['GET'])
 def get_rate_route():
     response = {"rate": 100}
     return jsonify(response)
 
 
-@app.route('/v1/get_vacancy', methods=['GET'])
+@app.route('/get_vacancy', methods=['GET'])
 def get_vacancy():
     response = {
         "title": "Computer Vision Engineer",
@@ -23,7 +23,7 @@ def get_vacancy():
     return jsonify(response)
 
 
-@app.route('/v1/get_rank', methods=['POST'])
+@app.route('/get_rank', methods=['POST'])
 def get_rank_route():
     request_dict = request.json
     salary_starts_from = request_dict.get('salary_starts_from')
