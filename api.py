@@ -13,11 +13,12 @@ def get_rate_route():
 @app.route('/v1/get_vacancy', methods=['GET'])
 def get_vacancy():
     response = {
-        "Title": "Computer Vision Engineer", 
-        "Salary": "300$", 
-        "Location": "New York", 
-        "Job Type": 1, 
-        "Description": "Some comments"
+        "title": "Computer Vision Engineer",
+        "salary": "300$",
+        "location": "New York",
+        "job_type": 1,
+        "description": "Some comments",
+        "experience": "0-1"
     }
     return jsonify(response)
 
