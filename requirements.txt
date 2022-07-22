@@ -1,3 +1,6 @@
 jsonify
 Flask
 requests
+types-requests
+pylint
+mypy
