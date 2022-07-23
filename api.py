@@ -14,6 +14,7 @@ def get_rate_route():
 def get_vacancy():
     response = {
         "title": "Computer Vision Engineer",
+        "company": "Google",
         "salary": "300$",
         "location": "New York",
         "job_type": 1,
